@@ -23,10 +23,7 @@ const Bio = () => {
       }
       site {
         siteMetadata {
-          author {
-            name
-            summary
-          }
+          author
           social {
             twitter
           }
