@@ -1,0 +1,45 @@
+---
+label: Content Template
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: layout
+  label: layout
+- type: datetime
+  name: date
+  label: date
+- type: number
+  name: id
+  label: id
+- type: number
+  name: price
+  label: price
+- type: field_group_list
+  name: image
+  label: image
+  fields:
+  - type: text
+    name: name
+    label: name
+  - type: text
+    name: src
+    label: src
+- type: text
+  name: path
+  label: path
+- type: field_group
+  name: customField
+  label: customField
+  fields:
+  - type: text
+    name: name
+    label: name
+  - type: list
+    name: values
+    label: values
+- type: textarea
+  name: description
+  label: description

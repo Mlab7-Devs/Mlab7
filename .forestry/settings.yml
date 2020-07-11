@@ -11,7 +11,7 @@ sections:
   label: Static
   create: all
   match: "**/*"
-  new_doc_ext: ".ico, .txt, .jpg, .png, .gif"
+  new_doc_ext: ico, .txt, .jpg, .png, .gif
 - type: directory
   path: content
   label: Content
