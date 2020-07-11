@@ -4,25 +4,27 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: directory
-  path: ''
-  label: SRC
-  create: all
-  match: "**/*"
-  new_doc_ext: ".js, .tsx, .sass, .scss, .css"
 - type: heading
   label: Content
+- type: directory
+  path: content
+  label: Content
+  create: all
+  match: "**/*"
 - type: directory
   path: static
   label: Static
   create: all
   match: "**/*"
   new_doc_ext: ico, .txt, .jpg, .png, .gif
+- type: heading
+  label: Don't Touch
 - type: directory
-  path: content
-  label: Content
+  path: ''
+  label: SRC
   create: all
   match: "**/*"
+  new_doc_ext: ".js, .tsx, .sass, .scss, .css"
 upload_dir: content/assets
 public_path: "/static"
 front_matter_path: ''
